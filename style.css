@@ -38,6 +38,7 @@ body{
     border-radius: .5rem;
     border: solid .2rem var(--black);
     cursor: pointer;
+    color: var(--black);
 
 
 }
@@ -232,8 +233,51 @@ header .login-form p a{
     
 }
 
-
-
+section{
+    padding: 2rem 9%;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/image/banner-bg.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+.home .content{
+    text-align: center;
+    width: 60rem;
+}
+.home .content h3{
+    color: var(--black);
+    font-size: 3rem;
+}
+.home .content h3 span{
+    color: var(--orange);
+    
+}
+.home .content p{
+    color: var(--light-color);
+    font-size: 1.7rem;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+.heading {
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: var(--black);
+}
+.heading span{
+    background: var(--orange);
+    color: #fff;
+    padding: .5rem 3rem;
+    display: inline-block;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0 100%, 7% 50%, 0 0);
+}
 /* Media Query */
 @media (max-width: 991px){
 
@@ -243,12 +287,18 @@ header .login-form p a{
     .header{
         padding: 2rem;
     }
+    section{
+        padding: 2rem;
+    }
 }
 
-@media (max-width: 750px){
+@media (max-width: 768px){
 
     #menu-btn{
         display: inline-block;
+    }
+    .header .search-form{
+        width: 90%;
     }
     .header .navbar{
         position: absolute;
@@ -274,5 +324,7 @@ header .login-form p a{
     html{
         font-size: 50%;
     }
-
+.heading{
+    font-size: 2.5rem;
+}
 }
